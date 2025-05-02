@@ -1,0 +1,13 @@
+<h1>Task: {{ task.title }}</h1>
+<p>Description: {{ task.description }}</p>
+<p>Created by: {{ user.username }}</p>
+<p>Created on: {{ created_on }}</p>
+<p>Status: {% if task.complete %}Completed{% else %}Incomplete{% endif %}</p>
+
+<hr>
+
+<h3>Additional Information:</h3>
+<ul>
+    <li>Total tasks: {{ total_tasks }}</li>
+    <li>Incomplete tasks: {{ incomplete_count }}</li>
+</ul>
